@@ -81,3 +81,4 @@ else
 endif " has("autocmd")
 
 colorscheme slate
+set number
