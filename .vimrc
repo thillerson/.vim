@@ -80,5 +80,7 @@ else
 
 endif " has("autocmd")
 
+" My stuff
 colorscheme slate
 set number
+nmap <C-l> zz
