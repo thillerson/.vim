@@ -9,6 +9,7 @@ set guioptions-=T                 " Hide toolbar.
 "set lines=25 columns=100          " Window dimensions.
 
 set guioptions-=r                 " Don't show right scrollbar
+set transparency=8
 
 
 if has("gui_macvim")
