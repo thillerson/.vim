@@ -80,13 +80,19 @@ else
 
 endif " has("autocmd")
 
+" My stuff
 " Pathogen
 call pathogen#infect()
 syntax on
 filetype plugin indent on
 
-" My stuff
-colorscheme slate
+if has('gui_running')
+	set background=dark
+	colorscheme solarized
+else
+	colorscheme slate
+endif
+
 set number
 nmap <C-l> zz
 
