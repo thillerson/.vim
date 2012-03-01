@@ -80,7 +80,15 @@ else
 
 endif " has("autocmd")
 
+" Pathogen
+call pathogen#infect()
+syntax on
+filetype plugin indent on
+
 " My stuff
 colorscheme slate
 set number
 nmap <C-l> zz
+
+set tabstop=2
+set shiftwidth=2
