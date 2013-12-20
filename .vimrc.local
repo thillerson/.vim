@@ -2,6 +2,9 @@ set autowrite
 set nocursorline
 set nowritebackup
 set whichwrap+=<,>,h,l,[,] " Wrap arrow keys between lines
+set guifont=Inconsolata:h14
+set guioptions-=T
+set guioptions-=r
 
 autocmd! bufwritepost .vimrc source ~/.vimrc
 noremap! jj <ESC>
