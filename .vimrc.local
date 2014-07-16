@@ -5,6 +5,8 @@ set whichwrap+=<,>,h,l,[,] " Wrap arrow keys between lines
 set guifont=Inconsolata:h14
 set guioptions-=T
 set guioptions-=r
+set splitbelow
+set splitright
 
 autocmd! bufwritepost .vimrc source ~/.vimrc
 noremap! jj <ESC>
@@ -35,3 +37,7 @@ function! s:RemoveConflictingAlignMaps()
 endfunction
 command! -nargs=0 RemoveConflictingAlignMaps call s:RemoveConflictingAlignMaps()
 silent! autocmd VimEnter * RemoveConflictingAlignMaps
+
+if $TMUX == ''
+  set clipboard+=unnamed
+endif
