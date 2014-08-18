@@ -1,2 +1,3 @@
 Bundle 'elixir-lang/vim-elixir'
 Bundle 'jceb/vim-orgmode'
+Bundle 'Keithbsmiley/swift.vim'
