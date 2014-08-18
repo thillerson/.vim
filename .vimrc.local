@@ -2,7 +2,7 @@ set autowrite
 set nocursorline
 set nowritebackup
 set whichwrap+=<,>,h,l,[,] " Wrap arrow keys between lines
-set guifont=Inconsolata:h14
+set guifont=InputMono\ Light:h14
 set guioptions-=T
 set guioptions-=r
 set splitbelow
