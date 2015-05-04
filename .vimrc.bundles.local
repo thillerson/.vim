@@ -1,3 +1,6 @@
 Bundle 'elixir-lang/vim-elixir'
 Bundle 'jceb/vim-orgmode'
 Bundle 'Keithbsmiley/swift.vim'
+Bundle 'Lokaltog/vim-powerline'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
