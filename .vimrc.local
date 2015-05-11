@@ -1,5 +1,4 @@
 set autowrite
-set nocursorline
 set nowritebackup
 set whichwrap+=<,>,h,l,[,] " Wrap arrow keys between lines
 set guifont=InputMono\ Light:h14
@@ -7,6 +6,10 @@ set guioptions-=T
 set guioptions-=r
 set splitbelow
 set splitright
+
+au WinLeave * set nocursorline nocursorcolumn
+au WinEnter * set cursorline cursorcolumn
+set cursorline cursorcolumn
 
 map <C-]> :Qfix<CR>
 
