@@ -8,6 +8,8 @@ set guioptions-=r
 set splitbelow
 set splitright
 
+map <C-]> :Qfix<CR>
+
 " Don't jump past soft wrapped lines
 nmap j gj
 nmap k gk
@@ -19,6 +21,9 @@ cnoremap <C-f> <Right>
 autocmd! bufwritepost .vimrc source ~/.vimrc
 noremap! jj <ESC>
 inoremap jj <ESC>
+
+autocmd BufRead,BufNewFile *.md setlocal spell
+autocmd BufRead,BufNewFile *.txt setlocal spell
 
 if $TERM == "xterm-256color" || $TERM == "screen-256color" || $COLORTERM == "gnome-terminal"
   set t_Co=256
