@@ -1,7 +1,7 @@
 set autowrite
 set nowritebackup
 set whichwrap+=<,>,h,l,[,] " Wrap arrow keys between lines
-set guifont=InputMono\ Light:h14
+set guifont=Hack:h14
 set guioptions-=T
 set guioptions-=r
 set splitbelow
@@ -65,3 +65,6 @@ endif
 " Markdown plugin config
 let g:vim_markdown_folding_disabled=1
 map <C-t> :Toc <CR>
+
+" Avro
+au BufRead,BufNewFile *.avdl setlocal filetype=avro-idl
