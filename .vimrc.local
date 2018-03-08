@@ -6,6 +6,8 @@ set guioptions-=T
 set guioptions-=r
 set splitbelow
 set splitright
+set listchars=tab:\ \ 
+set tabstop=2
 
 au WinLeave * set nocursorline nocursorcolumn
 au WinEnter * set cursorline cursorcolumn
