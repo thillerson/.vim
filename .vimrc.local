@@ -68,3 +68,6 @@ map <C-t> :Toc <CR>
 
 " Avro
 au BufRead,BufNewFile *.avdl setlocal filetype=avro-idl
+
+" JSX Anywhere. c.f. https://github.com/mxw/vim-jsx
+let g:jsx_ext_required = 0
