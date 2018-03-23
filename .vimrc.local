@@ -6,12 +6,12 @@ set guioptions-=T
 set guioptions-=r
 set splitbelow
 set splitright
-set listchars=tab:\ \ 
-set tabstop=2
+set listchars=tab:\ \ ,trail:•,extends:⟩,precedes:⟨
+set tabstop=2 softtabstop=2 shiftwidth=2 noexpandtab 
+set cursorline cursorcolumn
 
 au WinLeave * set nocursorline nocursorcolumn
 au WinEnter * set cursorline cursorcolumn
-set cursorline cursorcolumn
 
 map <C-]> :Qfix<CR>
 
@@ -72,4 +72,10 @@ map <C-t> :Toc <CR>
 au BufRead,BufNewFile *.avdl setlocal filetype=avro-idl
 
 " JSX Anywhere. c.f. https://github.com/mxw/vim-jsx
-let g:jsx_ext_required = 0
+" let g:jsx_ext_required = 0
+
+" Turn off JS lint noise
+let g:JSHintHighlightErrorLine = 0
+
+" Holy crap fix HAML tabs
+autocmd FileType haml setlocal ts=2 sts=2 sw=2 noexpandtab
